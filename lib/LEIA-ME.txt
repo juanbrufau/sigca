@@ -1,0 +1,8 @@
+Coloque aqui o driver JDBC do PostgreSQL:
+
+    postgresql-42.7.4.jar
+
+Baixe em https://jdbc.postgresql.org/download/
+
+O arquivo não é versionado no Git (ver .gitignore) porque é uma
+dependência externa, não código do projeto.

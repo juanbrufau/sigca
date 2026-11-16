@@ -1,0 +1,13 @@
+# Compilação
+build/
+dist/
+*.class
+
+# Configuração local com senha — nunca versionar
+banco.properties
+
+# Dependência externa: o driver JDBC é baixado, não versionado
+lib/*.jar
+
+# NetBeans: configuração pessoal da máquina
+nbproject/private/
