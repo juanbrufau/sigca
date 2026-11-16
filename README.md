@@ -79,8 +79,15 @@ A senha nunca é gravada em texto: o que vai para o banco é o resumo SHA-256 de
 
 ```bash
 javac -encoding UTF-8 -d build $(find src -name '*.java')
-java -cp build:lib/postgresql-42.7.4.jar sigca.App
+
+java -cp build:lib/postgresql-42.7.4.jar sigca.AppGrafico   # versão com janelas
+java -cp build:lib/postgresql-42.7.4.jar sigca.App          # versão de console
 ```
+
+O sistema tem **duas interfaces sobre o mesmo núcleo**: `sigca.AppGrafico` abre as
+janelas Swing exigidas no item 4.1 do gabarito, e `sigca.App` abre o menu de console no
+formato da metodologia da disciplina. As duas chamam os mesmos repositórios e os mesmos
+serviços — nenhuma regra de negócio foi duplicada.
 
 No Windows, troque os dois-pontos do classpath por ponto e vírgula:
 `java -cp build;lib\postgresql-42.7.4.jar sigca.App`
@@ -90,7 +97,7 @@ No Windows, troque os dois-pontos do classpath por ponto e vírgula:
 1. Arquivo → Novo Projeto → Java com Ant → Projeto Java com Fontes Existentes;
 2. aponte a pasta `src` como pasta de fontes;
 3. Propriedades do Projeto → Bibliotecas → Adicionar JAR → `lib/postgresql-42.7.4.jar`;
-4. classe principal: `sigca.App`.
+4. classe principal: `sigca.AppGrafico` (janelas) ou `sigca.App` (console).
 
 ### Se o banco não estiver no padrão
 
@@ -113,7 +120,7 @@ sigca/
     ├── conexao/Conexao.java    conexão JDBC; os repositórios herdam dela
     ├── repository/             um repositório por tabela, com todo o SQL
     ├── servico/                regras de negócio
-    └── ui/                     telas Swing (em desenvolvimento)
+    └── ui/                     seis telas Swing do item 4.1
 ```
 
 > **Sobre o nome do pacote das entidades.** A imagem do gabarito pede o pacote
@@ -211,7 +218,7 @@ próprio para esse fim e tem custo de cálculo ajustável.
 | Repositórios (DAO) | pronto |
 | Serviços (segurança, escopo, inscrição) | pronto |
 | Aplicação de console | pronto |
-| Telas Swing do item 4.1 do gabarito | em desenvolvimento |
+| Telas Swing do item 4.1 do gabarito | pronto |
 | Diagrama de classes de projeto | em desenvolvimento |
 
 ---
