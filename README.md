@@ -177,19 +177,16 @@ entregue à Companhia das Obras. As colunas já existem no banco.
 
 ## O que foi usado de cada disciplina
 
-**Banco de Dados** — modelo conceitual e lógico (aulas 4 a 8), generalização e
-especialização de `pessoa`/`usuario` (aula 6), restrições de integridade: PK, FK,
-UNIQUE e CHECK (aula 9), DDL e DML (aula 12), junções (aula 13), `GROUP BY` e `HAVING`
-(aula 14), normalização até a 3FN (aula 16).
+**Banco de Dados** — modelo conceitual e lógico, generalização e
+especialização de `pessoa`/`usuario`, restrições de integridade: PK, FK,
+UNIQUE e CHECK, DDL e DML, junções, `GROUP BY` e `HAVING`, normalização até a 3FN.
 
-**Linguagem de Programação I** — classes, atributos, construtores e pacotes (aula 8),
-encapsulamento e herança (aula 9), sobrescrita de `toString()` (aulas 10 e 11),
-elementos estáticos (aula 14), polimorfismo e `enum` (aula 16), tratamento de exceções
-(aula 5), `String` e formatação (aula 7).
+**Linguagem de Programação I** — classes, atributos, construtores e pacotes,
+encapsulamento e herança, sobrescrita de `toString()`,
+elementos estáticos, polimorfismo e `enum`, tratamento de exceções, `String` e formatação.
 
-**Estrutura de Dados** — `ArrayList` nas listas devolvidas pelos repositórios
-(aula 13), `Map` na consolidação do arrecadado por alimento (aula 16), **árvore e
-recursividade** no percurso da estrutura organizacional (aulas 15 e 17).
+**Estrutura de Dados** — `ArrayList` nas listas devolvidas pelos repositórios, `Map` na consolidação do arrecadado por alimento, **árvore e
+recursividade** no percurso da estrutura organizacional.
 
 **Engenharia de Software** — requisitos funcionais e não funcionais, casos de uso de
 alto nível e expandidos, modelo conceitual, arquitetura em camadas, diagramas de
